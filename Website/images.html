@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Copilot</title>
+  <meta charset="utf-8">
+   <link rel="stylesheet" href="new.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+<div id="box">
+ 
+  <header>
+  <h1>Welcome to Copilot</h1>
+  </header>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	
+		<a href="index.html">Home</a>
+		<a href="profiles.html">Profiles</a>
+		<a href="availabilities.html">Availabilities</a>
+		<a href="about.html">About</a>
+		<a href="description.html">Description</a>
+		<a href="images.html">Images</a>
+	
+	
+</div>
+  <div id='main'<!--Starting with what we are about as a website(may go into description), creation date, founders, values, advertisement opprotunities, copywrite, & privacy policy.-->
+	   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+	<main> 
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		$("#gallery>ul>li").children("a").each(function() {
+		$(this).click(function() {
+		$("figcaption").html($(this).attr("title"));
+		$("figure>img").attr("src",$(this).attr("href"));
+		$("figure").hide();
+		$("figure").fadeToggle(3000);
+		return false
+		});
+	});
+});
+</script>
+</head>
+<h1>Images & Videos</h1>
+<div id="gallery">
+ <ul>
+   <li>
+     <a href="1.jpg"  title="Tandem Flying"><img src="1.jpg" width="100" height="75"  alt="Tandam Flying"></a>
+   </li>
+   <li>
+     <a href="2.jpg" title="Parked Private Plane"><img src="2.jpg" width="100" height="75" alt="Parked Private Plane"></a>  
+   </li>
+   <li>
+     <a href="3.jpg" title="Plane Party"><img src="3.jpg" width="100" height="75" alt="Plane Party"></a>
+   </li>
+   <li>
+     <a href="4.jpg" title="Copilots"><img src="4.jpg" width="100" height="75" alt="Copilots"></a>
+   </li>
+   <li>
+     <a href="5.jpg" title="Cockpit Boeing 737"><img src="5.jpg" width="100" height="75" alt="Cockpit Boeing 737"></a>
+  </li>
+  <li>
+
+  </li>
+ </ul>
+ <figure>
+  <img src="1.jpg" width="400" height="300" alt="Tandem Flying">
+  <figcaption>Tandem Flying</figcaption>
+ </figure>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/VWHZSSTZsEg" frameborder="0" allowfullscreen></iframe>
+</div>
+ 
+  	</main>
+
+  </div>
+
+<footer>
+Copyright © 2000-2019 Copilot, LLC. <br>
+<a href="privacy.html">Privacy Policy</a>
+</footer>
+</div>
+</body>
+</html>
+
+
 <DOCTYPE html>
