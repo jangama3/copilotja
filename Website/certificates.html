@@ -3,21 +3,41 @@
 <head>
   <title>Copilot</title>
   <meta charset="utf-8">
-   <link rel="PUT HERE THE NAME OF THE CSS FILE" href="CSS FILE HERE">
+   <link rel="stylesheet" href="new.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <div id="first1">
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+<div id="box">
+ 
   <header>
   <h1>Welcome to Copilot</h1>
   </header>
-	<nav id="nav1"><!--left side navigation-->
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="profiles.html">Profiles</a></li>
-		<li><a href="availabilities.html">Availabilities</a></li>
-		</ul>
-	</nav>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	
+		<a href="index.html">Home</a>
+		<a href="profiles.html">Profiles</a>
+		<a href="availabilities.html">Availabilities</a>
+		<a href="about.html">About</a>
+		<a href="description.html">Description</a>
+		<a href="images.html">Images</a>
+	
+	
+</div>
+  <div id='main'<!--Starting with what we are about as a website(may go into description), creation date, founders, values, advertisement opprotunities, copywrite, & privacy policy.-->
+	   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
   <main>
 	  <h1> Certification Types </h1>
 	  
@@ -30,18 +50,16 @@
 		<p id="AirlineTransport"> <strong> The Airline Transport Pilot License </strong> - Becoming a commercial airline pilot in the United States<br> or becoming a commercial airline pilot outside of the <br> United States you need to complete the first two pilot licenses (P.P.L. and C.P.L.) before you can earn your Airline Transport Pilot certification (A.T.P.). <br> To earn your commercial airline transport pilot license, you must meet following FAA ATP requirements. You must be at <br>least 23 years old, have a valid drivers license, pass all exams and tests, pass the flight exams, <br>log more than 1500 hours of 	flight time (in the U.S.) in various weather conditions and in numerous <br>types of aircraft, 		pass the I.R. courses and ground school courses, pass all medical and eye exams, <br>and be of 		sound body, mind and execution.
 		</p>
   
-  
   </main>
-  <div id="First2">
-  <nav id="nav2"><!--bottom navigation-->
-	<ul>
-		<li><a href="aboutbout.html">About</a></li>
-		<li><a href="description.html">Description</a></li>
-		<li><a href="images.html">Images</a></li>
-	</ul>
-</nav>
-</div>
+
+  </div>
+
+<footer>
+Copyright © 2000-2019 Copilot, LLC. <br>
+<a href="privacy.html">Privacy Policy</a>
+</footer>
 </div>
 </body>
-<footer>
-</footer>
+</html>
+
+
