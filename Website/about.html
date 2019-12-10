@@ -3,39 +3,64 @@
 <head>
   <title>Copilot</title>
   <meta charset="utf-8">
-   <link rel="stylesheet" href="all.css">
+   <link rel="stylesheet" href="new.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
 
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+<div id="box">
+ 
   <header>
   <h1>Welcome to Copilot</h1>
   </header>
-	<nav class="nav1"><!--left side navigation-->
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="profiles.html">Profiles</a></li>
-		<li><a href="availabilities.html">Availabilities</a></li>
-		</ul>
-	</nav>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	
+		<a href="index.html">Home</a>
+		<a href="profiles.html">Profiles</a>
+		<a href="availabilities.html">Availabilities</a>
+		<a href="about.html">About</a>
+		<a href="description.html">Description</a>
+		<a href="images.html">Images</a>
+	
+	
+</div>
+  <div id='main'<!--Starting with what we are about as a website(may go into description), creation date, founders, values, advertisement opprotunities, copywrite, & privacy policy.-->
+	   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
+	   <h1 id="aboutTitle">About Copilot</h1>
+	   <p id="peopleTitle"><strong>Creators</strong></p>
+	   <p id="people"> Jonathan Angamarca and P.J. Pancio</p>
+	   <p id="creationTitle"><strong>Creation Date</strong></p>
+	   <p id="Creation"> Created in 2019 at Seidenberg PACE University.
+		   <h3 id="moralvaluesTitle">Moral Values of Copilot</h3>
+		   <p id="moralvalues">Copilot holds moral values vary highly in our company policy. The fair treatment of all people and inclusion is makes the world a better place. With these functioning correctly, they are life protecting or life enhancing for all. Our relative moral values must be constantly examined to make sure that they are always performing their life-protecting mission.
+		
 
-  
-  <main><!--Starting with what we are about as a website(may go into description), creation date, founders, values, advertisement opprotunities, copywrite, & privacy policy.-->
-	  <p id="pilotlife"> Copilot is the place to meet new pilot's, train for certifications, pick up flight hours or <br> talk about the great flying experiences.
-	  </p>  
+
   
   
   </main>
 
-  <nav class="nav2"><!--bottom navigation-->
-	<ul>
-		<li><a href="aboutbout.html">About</a></li>
-		<li><a href="description.html">Description</a></li>
-		<li><a href="images.html">Images</a></li>
-	</ul>
-</nav>
+  </div>
 
-</body>
 <footer>
+Copyright © 2000-2019 Copilot, LLC. <br>
+<a href="privacy.html">Privacy Policy</a>
 </footer>
+</div>
+</body>
+</html>
+
+
 
